@@ -8,7 +8,7 @@ function runPythonScript(block: number, address: string, sens: string): Promise<
     // For example, it could be 'python3' or 'bin/python' depending on your setup.
     const pythonCommand = 'python';
     // Replace the path with the actual path to the pythonScript.py file on your machine.
-    const pythonScriptPath = 'C:/Users/Souha/Downloads/origintrail/ethereum-transactions/components/pythonScript.py';
+    const pythonScriptPath = 'pythonScript.py';
     const pythonProcess = spawn(pythonCommand, [pythonScriptPath, block.toString(), address, sens]);
 
     let scriptOutput = '';
