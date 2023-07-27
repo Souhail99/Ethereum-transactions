@@ -226,7 +226,7 @@ const IndexPage = () => {
     <br></br>
       <p className={styles.className_44d352_2}> OR : </p>
     <br></br>
-    <p className={styles.className_44d352_2}>Address's History :</p>
+    <p className={styles.className_44d352_2}>Address&apos;s History :</p>
       <input
         type="text"
         value={address}
@@ -250,7 +250,7 @@ const IndexPage = () => {
       <button onClick={handleSubmit} className={styles.btn}>Submit</button>
  
     <p>
-      Note : If sometimes the value for "EUR" or "Fees in EUR" equal 0 is 
+      Note : If sometimes the value for &quot;EUR&quot; or &quot;Fees in EUR&quot; equal 0 is 
       because I use the coingecko api to fetch the price
       but I use the free api so I have a limited number of request !
     </p>
