@@ -7,6 +7,7 @@ Before getting started, ensure that you have the following software installed on
 
 - Node.js (LTS version or higher)
 - npm (Node Package Manager)
+- Python
 
 ## Clone the Repository
 To get started, you'll need to clone the GitHub repository to your local machine. Open your terminal and execute the following command:
