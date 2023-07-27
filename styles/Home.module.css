@@ -6,7 +6,115 @@
   padding: 6rem;
   min-height: 100vh;
 }
+.form_text{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling for the main container */
+}
 
+.result_container {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  color: #000000;
+}
+
+.result_container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.result_container li {
+  margin-bottom: 10px;
+}
+
+.result_container p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.result_container h2 {
+  margin-bottom: 10px;
+}
+
+.main2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  min-height: 1vh;
+}
+.btn {
+  text-decoration: none;
+  padding: 10px;
+  margin: 15px;
+  font-family: 'Inter';
+  font-size: 1em;
+  color: #FFFFFF;
+  background-color: #000000;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  box-shadow: 3px 3px 12px D #444444;
+  -webkit-box-shadow: 3px 3px 12px D #444444;
+  -moz-box-shadow: 3px 3px 12px #444444;
+}
+
+.result_container {
+  max-width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling for the table container */
+}
+.table_container {
+  max-height: 400px; /* Set a maximum height for the table container */
+  overflow-y: auto; /* Enable vertical scrolling for the table container if needed */
+}
+
+.result_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.result_table thead {
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa;
+  z-index: 1;
+}
+.result_table th,
+.result_table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Add media query for responsive behavior */
+@media (max-width: 788px) {
+  .result_table th,
+  .result_table td {
+    font-size: 12px; /* Decrease font size for smaller screens */
+  }
+}
+.content{
+  padding:20px;
+}
+.className_44d352 {
+  font-family: 'Inter';
+  color: #FFFFFF;
+}
+
+.className_44d352_2 {
+  font-family: 'Inter';
+  color:  #000000;
+}
 .description {
   display: inherit;
   justify-content: inherit;

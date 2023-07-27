@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ethereum Transactions Web App - User Guide
 
-## Getting Started
+This guide provides instructions on how to set up and use the Ethereum Transactions Web App. The project includes a Next.js web app that allows you to retrieve transaction data from the Ethereum blockchain. You can find the full code and project files in the [GitHub repository](https://github.com/Souhail99/Ethereum-transactions).
 
-First, run the development server:
+## Prerequisites
+Before getting started, ensure that you have the following software installed on your machine:
+
+- Node.js (LTS version or higher)
+- npm (Node Package Manager)
+
+## Clone the Repository
+To get started, you'll need to clone the GitHub repository to your local machine. Open your terminal and execute the following command:
+
+```bash
+git clone https://github.com/Souhail99/Ethereum-transactions.git
+```
+
+## Install Dependencies
+After cloning the repository, navigate into the project directory using the terminal:
+
+```bash
+cd Ethereum-transactions
+```
+## Clone the Repository
+To get started, you'll need to clone the GitHub repository to your local machine. Open your terminal and execute the following command:
+
+```bash
+npm install
+```
+## Start the Web App
+
+With the dependencies installed, you can now start the Ethereum Transactions Web App. In the terminal, run the following command:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
+The web app should now be up and running at http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Using the Web App
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Address Balance at a Given Date 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+To check the Ethereum balance of a specific address on a particular date:
+- Enter the Ethereum address in the "Enter Ethereum address" field.
+- Enter the date in the format "YYYY-MM-DD" in the "Enter date" field.
+- Click the "Submit" button.
+- The Ethereum balance of the address on the specified date will be displayed below the input fields.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Address History
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To retrieve the transaction history of a specific address based on a block number and option (IN, OUT, or ALL):
+- Enter the Ethereum address in the "Enter Ethereum address" field.
+- Enter the block number in the "Enter the Block number" field.
+- Select the desired option (IN, OUT, or ALL) from the dropdown menu.
+- Click the "Submit" button.
+- The transaction history for the address and block number, based on the selected option, will be displayed in a table.
 
-## Learn More
+#### Python Script
 
-To learn more about Next.js, take a look at the following resources:
+We use a Python script to fetch additional data. The script is executed on the server-side to interact with the Ethereum blockchain and retrieve detailed transaction history. The Python script is stored in the "components" directory of the project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Token Balances for Address
+- To view the token balances of a specific address on a particular date:
+- Enter the Ethereum address in the "Enter Ethereum address" field.
+- Enter the date in the format "YYYY-MM-DD" in the "Enter date" field.
+- Click the "Submit" button.
+- The token balances for the given address on the specified date will be displayed in a table.
 
-## Deploy on Vercel
+## Note 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Please note that for the "Token Balances for Address" feature, the web app fetches data from an external API (Chainbase API) using the provided address and block number. Additionally, the API used for fetching token prices might have limitations in the free version, which could result in zero values for "EUR" or "Fees in EUR."
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## APIs :
+
+- [Etherscan API Documentation](https://etherscan.io/apis): Used to retrieve transaction data from the Ethereum blockchain.
+- [CoinGecko API Documentation](https://www.coingecko.com/api/documentation): Used to fetch token prices for converting ETH to EUR.
+- [Chainbase API](https://api.chainbase.online/): Used to retrieve token balances (not the ETH balance but just for the others tokens) for a given address at a specific block number.
