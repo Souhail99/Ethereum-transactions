@@ -58,7 +58,7 @@ To retrieve the transaction history of a specific address based on a block numbe
 
 #### Python Script
 
-We use a Python script to fetch additional data. The script is executed on the server-side to interact with the Ethereum blockchain and retrieve detailed transaction history. The Python script is stored in the "components" directory of the project.
+We use a Python script to fetch additional data. The script is executed on the server-side to interact with the Ethereum blockchain and retrieve detailed transaction history. The Python script is stored in the root directory of the project.
 
 
 ### Token Balances for Address
