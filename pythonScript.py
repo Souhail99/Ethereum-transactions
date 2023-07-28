@@ -5,10 +5,7 @@ import sys
 
 # Your API key to access the Etherscan API
 api_key = "UAMFNKVEE8HGMRICWBK5QWRZ92HWK25224"
-# Starting block to fetch transaction history
-startblock = 17524427
-# Ethereum address for which you want to trace the transaction history
-address = "0xe79a02ad6676c39456e6c48ca121a5f8eb61c2b6"
+
 # ETH to EUR conversion rate
 eth_eur_rate = 0
 # List to store all retrieved transactions
