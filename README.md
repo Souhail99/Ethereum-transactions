@@ -77,3 +77,5 @@ Please note that for the "Token Balances for Address" feature, the web app fetch
 - [Etherscan API Documentation](https://etherscan.io/apis): Used to retrieve transaction data from the Ethereum blockchain.
 - [CoinGecko API Documentation](https://www.coingecko.com/api/documentation): Used to fetch token prices for converting ETH to EUR.
 - [Chainbase API](https://api.chainbase.online/): Used to retrieve token balances (not the ETH balance but just for the others tokens) for a given address at a specific block number.
+
+I have also provided you with the private/keys for **Infura**, **Etherscan**, and **Chainbase** to save you the trouble of creating new ones. These are free test accounts that I created for this purpose, but you can still change them to your own if you prefer.
